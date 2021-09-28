@@ -3,6 +3,7 @@ const metadata = require('./metadata.json');
 async function creemee(req, res) {
 	try {
 		let uri;
+		console.log(metadata)
 		if (metadata[`creemee #${req.params.id}`]) uri = metadata[`creemee #${req.params.id}`];
 		else uri = {};
 		return res.send(uri);
