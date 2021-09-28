@@ -1,9 +1,9 @@
 const metadata = require('./metadata.json');
 
-async function zedHead(req, res) {
+async function creemee(req, res) {
 	try {
 		let uri;
-		if (metadata[`ZedHead #${req.params.id}`]) uri = metadata[`ZedHead #${req.params.id}`];
+		if (metadata[`Creemee #${req.params.id}`]) uri = metadata[`Creemee #${req.params.id}`];
 		else uri = {};
 		return res.send(uri);
 	} catch (err) {
@@ -13,5 +13,5 @@ async function zedHead(req, res) {
 }
 
 module.exports = {
-	zedHead
+	creemee
 };
