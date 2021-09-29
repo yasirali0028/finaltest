@@ -1,11 +1,9 @@
 import React, {useState , useRef} from 'react';
 import Footer from '../Components/Footer'
 import Item from '../Components/Items'
-// import Carousel from "react-elastic-carousel";
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import $ from "jquery";
-import { Chrono } from "react-chrono";
 
 
 function Home() {
@@ -18,7 +16,7 @@ function Home() {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     responsive: [
       {
         breakpoint: 1024,
@@ -48,42 +46,34 @@ function Home() {
   };
   const item = [{
     cardTitle: "NFTs",
-    cardSubtitle:"Release 9,999 Creemee NFTs to form early adopter community and raise funds for project",
     cardDetailedText: "Release 9,999 Creemee NFTs to form early adopter community and raise funds for project"
   },
   {
     cardTitle: "Merch",
-    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
     cardDetailedText: "Limited edition Creemees merchandise for owners so they can show their Creemee love IRL"
   },
   {
     cardTitle: "Talent",
-    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
     cardDetailedText: "Source writer(s), producer(s), and director from the Creemee owner community"
   },
   {
     cardTitle: "Short",
-    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
     cardDetailedText: "Create G-rated, animated short film with exclusive first-viewing for the Creemee community"
   },
   {
     cardTitle: "Partner",
-    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
     cardDetailedText: "Partner with major movie production studio to create the G-rated feature length Creemees movie"
   },
   {
     cardTitle: "Collaborate",
-    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
     cardDetailedText: "Creemee owners choose the movie’s main characters, voice actors, settings, themes, and more"
   },
   {
     cardTitle: "Screening",
-    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
     cardDetailedText: "Produce movie and invite Creemee owners to first screening IRL"
   },
   {
     cardTitle: "Premiere",
-    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
     cardDetailedText: "Release the Creemees movie to the world!"
   }
 ];
@@ -160,120 +150,21 @@ function Home() {
         <div className="container">
           <div className="roadmap_section" id="roadmap_section">
             <p className="roadmap_section_heading">🍦ROADMAP🍦</p>
-            <div style={{ width: "100%", height: "950px" }}>
-              <Chrono mode="VERTICAL" items={item}>
-                <div className="chrono-icons">
-                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
-                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
-                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
-                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
-                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
-                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
-                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
-                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
+            <div className="row justify-content-center">
+                <div className="col-lg-10 col-12">
+                  {item.map((items , value) =>
+                    <div key={value} className="d-block d-lg-flex d-md-flex justify-content-between align-items-center roadmap_card">
+                      <div className="w-image text-center">
+                        <img src={`Images/roadmap/${value+1}.png`} width="94px" height="94px" />
+                      </div>
+                      <div className="w-text">
+                        <p className="header_roadmap">{items.cardTitle}</p>
+                        <p className="mb-0 detail_text_roadmap">{items.cardDetailedText}</p>
+                      </div>
+                    </div>
+                  )}
                 </div>
-              </Chrono>
             </div>
-            <ul class="timeline d-none">
-            <li>
-                <div className="container-fluid pb-5">
-                  <div className="row align-items-center">
-                    <div className="col-lg-2 col-md-3 col-12 timeline_heading">
-                      NFTs
-                    </div>
-                    <div className="col-lg-10 col-md-9 col-12 timeline_para">
-                      Release 9,999 Creemee NFTs to form early adopter community and raise funds for project
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="container-fluid pb-5">
-                  <div className="row align-items-center">
-                    <div className="col-lg-2 col-md-3 col-12 timeline_heading">
-                      Merch
-                    </div>
-                    <div className="col-lg-10 col-md-9 col-12 timeline_para">
-                      Limited edition Creemees merchandise for owners so they can show their Creemee love IRL
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="container-fluid pb-5">
-                  <div className="row align-items-center">
-                    <div className="col-lg-2 col-md-3 col-12 timeline_heading">
-                      Talent
-                    </div>
-                    <div className="col-lg-10 col-md-9 col-12 timeline_para">
-                      Source writer(s), producer(s), and director from the Creemee owner community
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="container-fluid pb-5">
-                  <div className="row align-items-center">
-                    <div className="col-lg-2 col-md-3 col-12 timeline_heading">
-                      Short
-                    </div>
-                    <div className="col-lg-10 col-md-9 col-12 timeline_para">
-                      Create G-rated, animated short film with exclusive first-viewing for the Creemee community
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul class="timeline1 d-none">
-              <li>
-                <div className="container-fluid pb-5">
-                  <div className="row align-items-center">
-                    <div className="col-lg-2 col-md-3 col-12 timeline_heading">
-                      Partner
-                    </div>
-                    <div className="col-lg-10 col-md-9 col-12 timeline_para">
-                      Partner with major movie production studio to create the G-rated feature length Creemees movie
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="container-fluid pb-5">
-                  <div className="row align-items-center">
-                    <div className="col-lg-2 col-md-3 col-12 timeline_heading">
-                      Collaborate
-                    </div>
-                    <div className="col-lg-10 col-md-9 col-12 timeline_para">
-                      Creemee owners choose the movie’s main characters, voice actors, settings, themes, and more
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="container-fluid pb-5">
-                  <div className="row align-items-center">
-                    <div className="col-lg-2 col-md-3 col-12 timeline_heading">
-                      Screening
-                    </div>
-                    <div className="col-lg-10 col-md-9 col-12 timeline_para">
-                      Produce movie and invite Creemee owners to first screening IRL
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="container-fluid pb-5">
-                  <div className="row align-items-center">
-                    <div className="col-lg-2 col-md-3 col-12 timeline_heading">
-                      Premiere
-                    </div>
-                    <div className="col-lg-10 col-md-9 col-12 timeline_para">
-                      Release the Creemees movie to the world!
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
           </div>
           <div className="faq_section" id="faq_section">
             <p className="faq_section_heading">🍦FAQ🍦</p>
