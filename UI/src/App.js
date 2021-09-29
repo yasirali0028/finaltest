@@ -12,9 +12,9 @@ function App() {
   return (
     <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/privacy-policy" component={PrivacyPolicy} />
+        <Route exact path="/privacy" component={PrivacyPolicy} />
         <Route exact path="/connect" component={Connect} />
-        <Route exact path="/term&conditions" component={TermsCondition} />
+        <Route exact path="/terms" component={TermsCondition} />
     </Switch>
   );
 }

@@ -26,6 +26,7 @@ function Connect() {
     $(".modal").hide();
     $(".modal-backdrop").removeClass("show");
     $(".modal-backdrop").css("z-index", "-100");
+    $(".modal-open").css("overflow", "scroll !important");
   };
 
   const context = useWeb3React();

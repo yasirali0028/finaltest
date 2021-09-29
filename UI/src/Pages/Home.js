@@ -1,23 +1,92 @@
 import React, {useState , useRef} from 'react';
 import Footer from '../Components/Footer'
 import Item from '../Components/Items'
-import Carousel from "react-elastic-carousel";
+// import Carousel from "react-elastic-carousel";
 import { Link } from 'react-router-dom';
+import Slider from "react-slick";
 import $ from "jquery";
+import { Chrono } from "react-chrono";
 
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 5}
-];
 
 function Home() {
-  const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-  const itemsPerPage = 3
-  const carouselRef = useRef(null);
-  const totalPages = Math.ceil(items.length / itemsPerPage)
-  let resetTimeout;
+  const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]);
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 200,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+  const item = [{
+    cardTitle: "NFTs",
+    cardSubtitle:"Release 9,999 Creemee NFTs to form early adopter community and raise funds for project",
+    cardDetailedText: "Release 9,999 Creemee NFTs to form early adopter community and raise funds for project"
+  },
+  {
+    cardTitle: "Merch",
+    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
+    cardDetailedText: "Limited edition Creemees merchandise for owners so they can show their Creemee love IRL"
+  },
+  {
+    cardTitle: "Talent",
+    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
+    cardDetailedText: "Source writer(s), producer(s), and director from the Creemee owner community"
+  },
+  {
+    cardTitle: "Short",
+    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
+    cardDetailedText: "Create G-rated, animated short film with exclusive first-viewing for the Creemee community"
+  },
+  {
+    cardTitle: "Partner",
+    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
+    cardDetailedText: "Partner with major movie production studio to create the G-rated feature length Creemees movie"
+  },
+  {
+    cardTitle: "Collaborate",
+    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
+    cardDetailedText: "Creemee owners choose the movie’s main characters, voice actors, settings, themes, and more"
+  },
+  {
+    cardTitle: "Screening",
+    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
+    cardDetailedText: "Produce movie and invite Creemee owners to first screening IRL"
+  },
+  {
+    cardTitle: "Premiere",
+    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
+    cardDetailedText: "Release the Creemees movie to the world!"
+  }
+];
   
   return (
     <>
@@ -45,7 +114,7 @@ function Home() {
                     <p className="message_box_heading">NFT DROP COMING SOON</p>
                     <p className="message_box_para">All information about the Creemee NFT launch,including date and time, will be announced on our Discord.</p>
                   </div>
-                  <div className="col-lg-4 col-12 text_right">
+                  <div className="col-lg-4 col-12 nftdiscord">
                     <a href="https://discord.gg/TRaZRxta7q" target="_blank" className="btn_connect red_btn me-0">Join Discord</a>
                   </div>
                 </div>
@@ -58,7 +127,7 @@ function Home() {
               <div className="row">
                 <div className="col-lg-4 col-12">
                   <div className="px-4"> 
-                    <img src="Images/hero.gif" className="border_radius" width="100%" alt="cremees" />
+                    <img src="Images/creemes.gif" className="border_radius" width="100%" alt="cremees" />
                   </div>
                 </div>
                 <div className="col-lg-8 col-12 py-4">
@@ -79,32 +148,33 @@ function Home() {
         </div>
         <div className="container-fluid">
           <div className="carousel-wrapper">
-            <Carousel 
-              enableAutoPlay autoPlaySpeed={1500} 
-              breakPoints={breakPoints}
-              onNextEnd={({ index }) => {
-                clearTimeout(resetTimeout)
-                console.log(index+3 , totalPages)
-                if (index + 5 === 10) {
-                  resetTimeout = setTimeout(() => {
-                    console.log($('div.rec-slider').css('left'))
-                    $('div.rec-slider').css('left',"0")
-                  }, 1500) 
-                }
-              }}
-            >
+            <Slider {...settings}>
               {items.map((item,value) => (
                 <Item key={item}>
-                  <img src={`Images/slider/${value+1}.png`} width="100%" />
+                  <img src={`Images/horizontal-scroll/${value+1}.png`} width="95%" />
                 </Item>
               ))}
-            </Carousel>
+            </Slider>
           </div>
         </div>
         <div className="container">
           <div className="roadmap_section" id="roadmap_section">
             <p className="roadmap_section_heading">🍦ROADMAP🍦</p>
-            <ul class="timeline">
+            <div style={{ width: "100%", height: "950px" }}>
+              <Chrono mode="VERTICAL" items={item}>
+                <div className="chrono-icons">
+                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
+                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
+                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
+                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
+                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
+                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
+                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
+                  <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/298/soft-ice-cream_1f366.png" alt="image1" />
+                </div>
+              </Chrono>
+            </div>
+            <ul class="timeline d-none">
             <li>
                 <div className="container-fluid pb-5">
                   <div className="row align-items-center">
@@ -154,7 +224,7 @@ function Home() {
                 </div>
               </li>
             </ul>
-            <ul class="timeline1">
+            <ul class="timeline1 d-none">
               <li>
                 <div className="container-fluid pb-5">
                   <div className="row align-items-center">
@@ -615,9 +685,9 @@ function Home() {
           </div>
           <div className="social_section d-block">
               <div className="d-flex justify-content-center align-items-center">
-                <img src="Images/twit.png" className="d-block twit" width="48px" alt="cremees" />
-                <img src="Images/discord.png" className="d-block discord" width="48px" alt="cremees" />
-                <img src="Images/opensea.png" className="d-block" width="48px" alt="cremees" />
+                <a href="https://twitter.com/CreemeesMovie" target="_blank" ><img src="Images/twit.png" className="d-block twit" width="48px" alt="cremees" /></a>
+                <a href="https://discord.com/invite/TRaZRxta7q" target="_blank" ><img src="Images/discord.png" className="d-block discord" width="48px" alt="cremees" /></a>
+                <a href="https://opensea.io/collection/creemees" target="_blank" ><img src="Images/opensea.png" className="d-block" width="48px" alt="cremees" /></a>
               </div>
               <p className="SM text-center">Smart Contract</p>
           </div>
@@ -635,9 +705,9 @@ function Home() {
                 <p><a className="red_color text-decoration-none" href="#opensea_section">MEET THE CREEMEES</a></p>
                 <p><a className="red_color text-decoration-none" href="#roadmap_section">ROADMAP</a></p>
                 <p><a className="red_color text-decoration-none" href="#faq_section">FAQ</a></p>
-                <div className="d-flex pt-4 px-3 align-items-center">
-                  <img src="Images/red_twit.png" className="d-block twit" width="48px" alt="cremees" />
-                  <img src="Images/red_discord.png" className="d-block discord" width="48px" alt="cremees" />
+                <div className="d-flex pt-3 px-3 align-items-center">
+                  <a href="https://twitter.com/CreemeesMovie" target="_blank" ><img src="Images/red_twit.png" className="d-block twit" width="48px" alt="cremees" /></a>
+                  <a href="https://discord.com/invite/TRaZRxta7q" target="_blank" ><img src="Images/red_discord.png" className="d-block discord" width="48px" alt="cremees" /></a>
                 </div>
               </div>
             </div>

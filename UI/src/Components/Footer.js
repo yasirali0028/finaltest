@@ -10,9 +10,9 @@ function Footer() {
             <ul className="footer-ul d-flex justify-content-center pt-3" type="none">
               <li className="pe-3">©2021 Creemees, LLC</li>
               <li className="pe-3">|</li>
-              <li className="pe-3"><Link to="/term&conditions">Terms</Link></li>
+              <li className="pe-3"><Link to="/terms">Terms</Link></li>
               <li className="pe-3">|</li>
-              <li><Link to="/privacy-policy">Privacy</Link></li>
+              <li><Link to="/privacy">Privacy</Link></li>
             </ul>
           </div>
         </div>
