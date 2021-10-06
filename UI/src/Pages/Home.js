@@ -11,12 +11,14 @@ function Home() {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 200,
+    speed: 1500,
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 1500,
+    cssEase: "linear",
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -82,6 +84,9 @@ function Home() {
     <>
         <div className="container">
           <div className="home_header">
+            <Link className="btn_connect red_btn top_btn" to="/connect" >
+              Connect
+            </Link>
             <button type="button" class="home_header_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <span className="me-3">MENU</span> <img src="Images/bars.png" className="menu-ico" alt="cremees" />
             </button>
@@ -95,14 +100,14 @@ function Home() {
               </div>
               <div className="col-lg-4 col-12">
                 <div className="px-4 pb-4"> 
-                  <img src="Images/hero.gif" className="border_radius" width="100%" alt="cremees"  />
+                  <img src="Images/hero.gif" className="border_radius shadow" width="100%" alt="cremees"  />
                 </div>
               </div>
               <div className="col-11 message_box">
                 <div className="row justify-content-between align-items-center">
                   <div className="col-lg-8 col-12">
                     <p className="message_box_heading">NFT DROP COMING SOON</p>
-                    <p className="message_box_para">All information about the Creemee NFT launch,including date and time, will be announced on our Discord.</p>
+                    <p className="message_box_para">All information about the Creemee NFT launch, including date and time, will be announced on our Discord.</p>
                   </div>
                   <div className="col-lg-4 col-12 nftdiscord">
                     <a href="https://discord.gg/TRaZRxta7q" target="_blank" className="btn_connect red_btn me-0">Join Discord</a>
@@ -111,7 +116,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="ice_cream_section" id="ice_cream_section">
+          <div className="ice_cream_section" id="unite">
             <div className="container-fluid">
               <p className="ice_cream_heading">🍦ICE CREAM LOVERS UNITE!🍦</p>
               <div className="row">
@@ -131,7 +136,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="opensea_section text-center d-lg-flex d-md-flex d-block justify-content-between align-items-center" id="opensea_section">
+          <div className="opensea_section text-center d-lg-flex d-md-flex d-block justify-content-between align-items-center" id="creemees">
             <p>🍦MEET THE CREEMEES🍦</p>
             <button className="btn_connect purple_btn">View on OpenSea</button>
           </div>
@@ -148,7 +153,7 @@ function Home() {
           </div>
         </div>
         <div className="container">
-          <div className="roadmap_section" id="roadmap_section">
+          <div className="roadmap_section" id="roadmap">
             <p className="roadmap_section_heading">🍦ROADMAP🍦</p>
             <div className="row justify-content-center">
                 <div className="col-lg-10 col-12">
@@ -166,7 +171,7 @@ function Home() {
                 </div>
             </div>
           </div>
-          <div className="faq_section" id="faq_section">
+          <div className="faq_section" id="faq">
             <p className="faq_section_heading">🍦FAQ🍦</p>
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
@@ -592,10 +597,10 @@ function Home() {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p><a className="red_color text-decoration-none" href="#ice_cream_section">ICE CREAM LOVERS UNITE!</a></p>
-                <p><a className="red_color text-decoration-none" href="#opensea_section">MEET THE CREEMEES</a></p>
-                <p><a className="red_color text-decoration-none" href="#roadmap_section">ROADMAP</a></p>
-                <p><a className="red_color text-decoration-none" href="#faq_section">FAQ</a></p>
+                <p><a className="red_color text-decoration-none" href="#unite">ICE CREAM LOVERS UNITE!</a></p>
+                <p><a className="red_color text-decoration-none" href="#creemees">MEET THE CREEMEES</a></p>
+                <p><a className="red_color text-decoration-none" href="#roadmap">ROADMAP</a></p>
+                <p><a className="red_color text-decoration-none" href="#faq">FAQ</a></p>
                 <div className="d-flex pt-3 px-3 align-items-center">
                   <a href="https://twitter.com/CreemeesMovie" target="_blank" ><img src="Images/red_twit.png" className="d-block twit" width="48px" alt="cremees" /></a>
                   <a href="https://discord.com/invite/TRaZRxta7q" target="_blank" ><img src="Images/red_discord.png" className="d-block discord" width="48px" alt="cremees" /></a>

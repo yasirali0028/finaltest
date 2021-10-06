@@ -95,33 +95,36 @@ function Connect() {
           <div>
             <div className="container-fluid">
               <div className="row">
-                <div className="col-lg-6 col-12">
+                <div className="col-lg-4 col-12">
                   <div className="px-5">
                     <img
                       src="Images/hero.gif" 
-                      className="border_radius"
+                      className="border_radius shadow"
                       width="100%"
                       alt="cremees"
                     />
                   </div>
                 </div>
-                <div className="col-lg-6 col-12">
+                <div className="col-lg-8 col-12">
                   <p className="mb-0 connect_heading">Creemees NFT Drop</p>
-                  <p className="mb-0 connect_heading_2">Available Now!</p>
+                  <p className="mb-0 connect_heading_2">Release Date TBD</p>
                   <br />
                   <p className="mb-0 connect_para">
-                    Welcome, we’re so happy you’re here 😊 A little information before you buy —
+                    Welcome, we’re so happy you’re here! Creemees are not available yet and we will be announcing the release date on our <a href="https://discord.com/invite/TRaZRxta7q" target="_blank">Discord</a>. Here is a little information about how the minting (i.e. buying) process will work:
                     <br />
                     <br />
-                    9,700 NFTs are available for purchase (we’re holding 299 for our team, special collaborators, and the unknown) and you will be able to purchase up to three (3) Creemee NFTs per transaction. Creemee NFTs will be issued at random and you can make as many transactions as you would like.
+                    9,799 NFTs are available for purchase (we’re holding 200 for our team, special collaborators, and the unknown) and you will be able to purchase up to three (3) Creemee NFTs per transaction. Creemee NFTs will be issued at random and you can make as many transactions as you would like.
                     <br />
                     <br />
-                    The price to mint (i.e. purchase) each NFT is 0.03 ETH. Please note that our team will earn a 3.5% royalty and OpenSea will earn 2.5% if you decide to sell your Creemee(s).
+                    The price to mint (i.e. purchase) each NFT is 0.04 ETH. Please note that our team will earn a 4.0% royalty and OpenSea will earn 2.5% if you decide to sell your Creemee(s).
                     <br />
                     <br />
                     Once you’ve successfully made your purchase, your NFT will be visible in your MetaMask wallet and on OpenSea and you can validate yourself as a true Creemee on our <a href="https://discord.com/invite/TRaZRxta7q" target="_blank">Discord!</a>
+                    <br />
+                    <br />
+                    If you’re confused, please see our ‘How To’ section below or reach out to us at <a href="mailto:team@creemees.io" target="_blank">team@creemees.io</a>
                   </p>
-                  <button className="btn_connect red_btn mt-5">Buy Creemees</button>
+                  <button className="btn_connect red_btn mt-5">Join Community</button>
                 </div>
               </div>
             </div>
@@ -158,7 +161,7 @@ function Connect() {
         <div className="container">
             <div className="row align-items-center justify-content-between">
               <div className="col-lg-4 col-12">
-                <img src="Images/Rectangle 5.png" className="py-4" width="100%" alt="cremees" />
+                <img src="Images/disclaimer.jpeg" className="my-4 border_radius shadow" height="300px" width="100%" alt="cremees" />
               </div>
               <div className="col-lg-7 col-12 py-4">
                 <p className="connect_content_head" >Disclaimers</p>
