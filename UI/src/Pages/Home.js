@@ -64,7 +64,7 @@ function Home() {
   },
   {
     cardTitle: "Partner",
-    cardDetailedText: "Partner with major movie production studio to create the G-rated feature length Creemees movie"
+    cardDetailedText: "Partner with movie production studio(s) to create the G-rated feature length Creemees movie"
   },
   {
     cardTitle: "Collaborate",
@@ -107,7 +107,7 @@ function Home() {
                 <div className="row justify-content-between align-items-center">
                   <div className="col-lg-8 col-12">
                     <p className="message_box_heading">NFT DROP COMING SOON</p>
-                    <p className="message_box_para">All information about the Creemee NFT launch, including date and time, will be announced on our Discord.</p>
+                    <p className="message_box_para">All information about the Creemee NFT launch, including date and time, will be announced on our <a href="https://discord.com/invite/TRaZRxta7q" target="_blank">Discord</a>.</p>
                   </div>
                   <div className="col-lg-4 col-12 nftdiscord">
                     <a href="https://discord.gg/TRaZRxta7q" target="_blank" className="btn_connect red_btn me-0">Join Discord</a>
@@ -130,6 +130,10 @@ function Home() {
                     Creemees are 9,999 randomly-generated (and cute!) ice cream NFTs and the stars of a collaborative G-rated feature film project.
                     <br /><br />
                     Creemee NFT owners will help choose the characters (plus their names, voice actors, and backstories), settings, and themes of the future Creemees movie.
+                    <br /><br />
+                    50% of all movie-related profits will be shared among Creemees NFT owners.
+                    <br />
+                    (See "What benefits do Creemee owners get?" in our <a href="https://creemees.io/#faq" target="_blank">FAQ</a> for details)
                   </p>
                   <a href="https://discord.gg/TRaZRxta7q" target="_blank" className="btn_connect blue_btn">Join Discord</a>
                 </div>
@@ -200,7 +204,7 @@ function Home() {
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Creemees were created to spread joy and bring people together around an audacious, common goal of creating a G-rated feature-length film as a digital community.
-                    <br />
+                    <br /><br />
                     Plus, the metaverse needs ice cream!
                     <br />
                   </div>
@@ -215,10 +219,10 @@ function Home() {
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Creemees are for anyone who loves ice cream, movies, NFTs, and fun.
-                    <br />
+                    <br /><br />
                     The goal is for new and experienced members of the NFT community to be part of the community. This will help the project benefit from a diverse range of perspectives.
-                    <br />
-                    Those new to NFTs are welcome to join our Discord to ask questions and get in on the fun!
+                    <br /><br />
+                    Those new to NFTs are welcome to join our <a href="https://discord.com/invite/TRaZRxta7q" target="_blank">Discord</a> to ask questions and get in on the fun!
                     <br />
                   </div>
                 </div>
@@ -231,7 +235,7 @@ function Home() {
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                  All information about the Creemee NFT launch, including date and time, will be announced on our Discord.
+                  All information about the Creemee NFT launch, including date and time, will be announced on our <a href="https://discord.com/invite/TRaZRxta7q" target="_blank">Discord</a>.
                   <br />
                   </div>
                 </div>
@@ -244,8 +248,8 @@ function Home() {
                 </h2>
                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                  The cost to purchase (i.e. “mint”) a Creemee NFT is 0.03 ETH.
-                  <br />
+                  The cost to purchase (i.e. “mint”) a Creemee NFT is 0.04 ETH (<a href="https://coinmarketcap.com/converter/eth/usd/?amt=0.04" target="_blank">see value in U.S. Dollars</a>).
+                  <br /><br />
                   We believe this purchase/minting price is low enough to encourage a wide-rage of people to participate and high enough to show that they believe in the project.
                   <br />
                   </div>
@@ -271,9 +275,9 @@ function Home() {
                 </h2>
                 <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    9,700
-                    <br />
-                    299 (~3%) will be reserved for our team, honorary community members, and the unknown.
+                    9,799
+                    <br /><br />
+                    200 (~2%) will be reserved for our team, honorary community members, and the unknown.
                     <br />
                   </div>
                 </div>
@@ -287,7 +291,7 @@ function Home() {
                 <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Three (3) Creemees can be purchased (i.e. “minted”) per transaction until all 9,999 are sold. This number was set low intentionally in order to promote diversity and opportunity for a wide-range of people to participate in the owner community.
-                    <br />
+                    <br /><br />
                     There is no limit to the number of transactions an individual wallet can make.
                     <br />
                   </div>
@@ -302,8 +306,8 @@ function Home() {
                 <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Yes, you will be required to pay industry-standard processing (i.e. “gas”) fees for each transaction.
-                    <br />
-                    Additionally, the Creemees team (Teemee?) will receive a 3.5% royalty on all future Creemee sales and OpenSea will receive 2.5%, for a total of 6%.
+                    <br /><br />
+                    Additionally, the Creemees team will receive a 4% royalty on all future Creemee sales and OpenSea will receive 2.5%, for a total of 6.5%.
                     <br />
                   </div>
                 </div>
@@ -316,7 +320,7 @@ function Home() {
                 </h2>
                 <div id="collapseEle" class="accordion-collapse collapse" aria-labelledby="headingEle" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    Creemees are ERC-1155 NFTs on the Ethereum blockchain.
+                    Creemees are ERC-721 NFTs on the Ethereum blockchain.
                     <br />
                   </div>
                 </div>
@@ -332,10 +336,10 @@ function Home() {
                     <ol>
                       <li>Create a MetaMask wallet (unless you already have one). MetaMask is a popular service used to purchase NFTs with cryptocurrency (How to create a MetaMask Wallet)</li>
                       <li>Fund your wallet with ETH, the cryptocurrency used on the Ethereum blockchain</li>
-                      <li>Connect your wallet with our Creemees.io</li>
-                      <li>Join our Discord to be the first to know when Creemees will be available for purchase</li>
-                      <li>When Creemees become available, go to this website and click the “Buy Creemees” button at the top of the screen</li>
-                      <li>Follow the instructions in your MetaMask wallet to complete the purchase.</li>
+                      <li>Connect your wallet on the Creemees.io <a href="https://creemees.io/connect" target="_blank">"Connect"</a> page</li>
+                      <li>Join our <a href="https://discord.com/invite/TRaZRxta7q" target="_blank">Discord</a> to be the first to know when Creemees will be available for purchase</li>
+                      <li>When Creemees become available, return to the <a href="https://creemees.io/connect" target="_blank">"Connect"</a> page and click the “Buy Creemees” button</li>
+                      <li>Follow the instructions in your MetaMask wallet to complete the purchase</li>
                     </ol>
                     <br />
                   </div>
@@ -350,13 +354,14 @@ function Home() {
                 <div id="collapseThre" class="accordion-collapse collapse" aria-labelledby="headingThre" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Many!
+                    <br />
                     <ul>
+                      <li>Creemee NFT owners will receive a 50% profit share of all licensing profits earned by Creemees, LLC, including profits from movies, television, merchandise, etc.</li>
                       <li>Exclusive access to the owners channel in Discord, where the most important decisions about the future of Creemees will be discussed and finalized</li>
                       <li>Exclusive access to a limited edition run of official Creemees merchandise to show their Creemees love IRL!</li>
                       <li>Voting power for key movie elements, such as the name and backstory of the Creemee(s) they own, voice actors, places and settings, movie themes and more</li>
                       <li>Exclusive access to future NFT drops</li>
                     </ul>
-                    Surprise benefits are also fun, so expect to see them pop up on occasion :)
                     <br />
                   </div>
                 </div>
@@ -369,9 +374,9 @@ function Home() {
                 </h2>
                 <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    Ownership of a Creemee NFT does not grant the owner any commercial use or intellectual property (IP) rights.
-                    <br />
-                    When the Creemees movie contract request for proposal (RFP) process begins, the community of Creemee owners will have the opportunity to negotiate commercial use and IP rights as part of contract negotiations with movie production studios.
+                  Ownership of a Creemee NFT does not grant the owner any commercial use or intellectual property (IP) rights.
+                    <br /><br />
+                    However, 50% of all profits from intellectual property ("I.P.") licensing (i.e. movies, T.V. shows, merchandise, etc.) will be distributed among Creemee owners based on number of Creemees owned.
                     <br />
                   </div>
                 </div>
@@ -385,11 +390,11 @@ function Home() {
                 <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     The characters of the Creemees movie will be determined by the highest sale price on the secondary market at the time of movie contract signing.
-                    <br />
+                    <br /><br />
                     Speaking parts in the movie will be guaranteed for Creemees in the top 25 of secondary market sale prices.
-                    <br />
+                    <br /><br />
                     The date and time of the movie contract signing will be shared in our Discord at least one (1) day prior to the signing and we will do everything we can to make sure the community is aware of this timing.
-                    <br />
+                    <br /><br />
                     The intention is to encourage high sale prices of the top 25 NFTs to fund the film while evenly distributing all other movie decisions among owners of the remaining 9,974 Creemees.
                     <br />
                   </div>
@@ -404,7 +409,7 @@ function Home() {
                 <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Creemee NFT owners will vote on voice actors, settings, and themes. Additional elements may be added to this list.
-                    <br />
+                    <br /><br />
                     Owners at the time of movie contract signing will be able to choose their Creemees’ backstory and also name their Creemee(s) (must be a G-rated name) with the name to be included in the movie credits.
                     <br />
                   </div>
@@ -419,9 +424,9 @@ function Home() {
                 <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Community voting will be held on Discord or, if necessary, via a Creemees-specific decentralized autonomous organization (DAO).
-                    <br />
+                    <br /><br />
                     Only verified Creemee owners at the time of voting will be able to submit votes.
-                    <br />
+                    <br /><br />
                     In the event that a Creemees-specific DAO is formed, all details and updates will be shared in our Discord.
                     <br />
                   </div>
@@ -435,8 +440,8 @@ function Home() {
                 </h2>
                 <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                  The writer(s), producer(s), and director(s) of the Creemees movie must be Creemee NFT owners.
-                    <br />
+                    The writer(s), producer(s), and director(s) of the Creemees movie must be Creemee NFT owners.
+                    <br /><br />
                     The means of selection will be determined at a later date with help from the Creemees community.
                     <br />
                   </div>
@@ -451,9 +456,9 @@ function Home() {
                 <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                   After completing all previous steps in the roadmap, the Creemees community will create and vote on requests for proposal (RFPs) to share with specific movie production studios.
-                    <br />
+                    <br /><br />
                     At this stage, Creemee owners will be able to negotiate intellectual property (IP) and commercial use rights for their Creemees.
-                    <br />
+                    <br /><br />
                     At launch, Creemee owners do not have IP or commercial-use rights for their Creemees.
                     <br />
                   </div>
@@ -468,9 +473,9 @@ function Home() {
                 <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Yes. In our opinion, with the power of a passionate community coming together around a common goal, it is highly probable to create and release a Creemees movie.
-                    <br />
+                    <br /><br />
                     It will take time and we will make mistakes, but we can make this happen if we are patient and support one another through the process.
-                    <br />
+                    <br /><br />
                     The world can always use more joy and we’re going to spread some!
                     <br />
                   </div>
@@ -485,7 +490,7 @@ function Home() {
                 <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Other than the way they look, nothing!
-                    <br />
+                    <br /><br />
                     It’s exciting to think that our community will determine almost everything about Creemees and their future movie.
                     <br />
                   </div>
@@ -499,7 +504,7 @@ function Home() {
                 </h2>
                 <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    Discord is the official hub of the Creemees community and where we announce exclusive updates and collaborate with each other.
+                    The Creemees <a href="https://discord.com/invite/TRaZRxta7q" target="_blank">Discord</a> is the official hub of the Creemees community and where we announce exclusive updates and collaborate with each other.
                     <br />
                   </div>
                 </div>
@@ -512,7 +517,7 @@ function Home() {
                 </h2>
                 <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <a href="https://twitter.com/CreemeesMovie" target="_blank">We use Twitter to talk ice cream, share Creemee memes (Creemes?), and announce general updates.</a>
+                    We use <a href="https://twitter.com/CreemeesMovie" target="_blank">Twitter</a> to talk ice cream, share Creemee memes ("Creemes"), and announce general updates.
                     <br />
                   </div>
                 </div>
@@ -539,7 +544,7 @@ function Home() {
                 <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Our goal is to make Creemees and the Creemee community 100% kid-friendly and inspire conversations between adults and children about blockchain, NFTs and, most importantly, ice cream.
-                    <br />
+                    <br /><br />
                     **Disclaimer** — we do not recommend giving children access to your (or any) MetaMask wallet 😊
                     <br />
                   </div>
@@ -554,10 +559,10 @@ function Home() {
                 <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Creemees were created by a dreamer with a love of movies, NFTs, and joy.
-                    <br />
+                    <br /><br />
                     They have a background in marketing Hollywood movies and leading NFT projects for global brands.
-                    <br />
-                    The creator wishes to be anonymous at this time to keep the focus on the true stars of this project: the Creemees and their owners.
+                    <br /><br />
+                    Creemees' creator wishes to be anonymous to keep the focus on the true stars of this project: the Creemees and their owners.
                     <br />
                   </div>
                 </div>
@@ -571,7 +576,7 @@ function Home() {
                 <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     The creator of this project is expecting their first child in April of 2022 and this project is dedicated to them.
-                    <br />
+                    <br /><br />
                     They hope the Creemees project will make their son or daughter proud and show them that your dreams will come true if you’re willing to share the work and fun with friends.
                     <br />
                   </div>
@@ -585,7 +590,7 @@ function Home() {
                 <a href="https://discord.com/invite/TRaZRxta7q" target="_blank" ><img src="Images/discord.png" className="d-block discord" width="48px" alt="cremees" /></a>
                 <a href="https://opensea.io/collection/creemees" target="_blank" ><img src="Images/opensea.png" className="d-block" width="48px" alt="cremees" /></a>
               </div>
-              <p className="SM text-center">Smart Contract</p>
+              {/* <p className="SM text-center">Smart Contract</p> */}
           </div>
         </div>
         <Footer />
