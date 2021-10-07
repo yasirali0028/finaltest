@@ -183,9 +183,9 @@ function Home() {
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Creemees are cute ice cream people with diverse characteristics like flavor, cone, and topping. 
-                    <br />
+                    <br /><br />
                     That’s all we know about them right now and with your help they will all get names, backstories, and roles in the Creemees movie.
-                    <br />
+                    <br /><br />
                     Each Creemee is a non-fungible token (NFT).
                     <br />
                   </div>
