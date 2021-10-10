@@ -47,37 +47,42 @@ function Home() {
     ]
   };
   const item = [{
-    cardTitle: "NFTs",
-    cardDetailedText: "Release 9,999 Creemee NFTs to form early adopter community and raise funds for project"
+    cardTitle: "10% — Apparel",
+    cardDetailedText: "Limited edition Creemees apparel for owners so they can show their Creemee love IRL"
   },
   {
-    cardTitle: "Merch",
-    cardDetailedText: "Limited edition Creemees merchandise for owners so they can show their Creemee love IRL"
-  },
-  {
-    cardTitle: "Talent",
-    cardDetailedText: "Source writer(s), producer(s), and director from the Creemee owner community"
-  },
-  {
-    cardTitle: "Short",
+    cardTitle: "25% — Short",
     cardDetailedText: "Create G-rated, animated short film with exclusive first-viewing for the Creemee community"
   },
   {
-    cardTitle: "Partner",
+    cardTitle: "50% — Game",
+    cardDetailedText: "Buy Sandbox LAND to bring Creemees to the metaverse with a game reminiscent of ‘Candyland’"
+  },
+  {
+    cardTitle: "75% — Pop-up",
+    cardDetailedText: "Churn real-life, Creemees-inspired ice cream to sell in pop-up stores around the world"
+  },
+  {
+    cardTitle: "100% — Movie",
     cardDetailedText: "Partner with movie production studio(s) to create the G-rated feature length Creemees movie"
   },
   {
-    cardTitle: "Collaborate",
-    cardDetailedText: "Creemee owners choose the movie’s main characters, voice actors, settings, themes, and more"
-  },
-  {
-    cardTitle: "Screening",
-    cardDetailedText: "Produce movie and invite Creemee owners to first screening IRL"
-  },
-  {
-    cardTitle: "Premiere",
-    cardDetailedText: "Release the Creemees movie to the world!"
+    cardTitle: "Profit Sharing",
+    cardDetailedText: "50% of profits from Shorts, Games, Pop-ups, and Movies will be shared with Creemees owners"
   }
+  // },
+  // {
+  //   cardTitle: "Collaborate",
+  //   cardDetailedText: "Creemee owners choose the movie’s main characters, voice actors, settings, themes, and more"
+  // },
+  // {
+  //   cardTitle: "Screening",
+  //   cardDetailedText: "Produce movie and invite Creemee owners to first screening IRL"
+  // },
+  // {
+  //   cardTitle: "Premiere",
+  //   cardDetailedText: "Release the Creemees movie to the world!"
+  // }
 ];
   
   return (
