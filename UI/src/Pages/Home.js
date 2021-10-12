@@ -595,7 +595,11 @@ function Home() {
                 <a href="https://discord.com/invite/TRaZRxta7q" target="_blank" ><img src="Images/discord.png" className="d-block discord" width="48px" alt="cremees" /></a>
                 <a href="https://opensea.io/collection/creemees" target="_blank" ><img src="Images/opensea.png" className="d-block" width="48px" alt="cremees" /></a>
               </div>
-              {/* <p className="SM text-center">Smart Contract</p> */}
+              <p className="SM text-center">Carbon-neutrality powered by <a href="https://aerial.is/">Aerial</a></p>
+          </div>
+          {/* Inserting Aerial logo with code from footer.js */}
+          <div className="footer text-center">
+          <img src="Images/aerial.png" width="283px" alt="aerial" />
           </div>
         </div>
         <Footer />
