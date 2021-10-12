@@ -598,8 +598,9 @@ function Home() {
               <p className="SM text-center">Carbon-neutrality powered by <a href="https://aerial.is/">Aerial</a></p>
           </div>
           {/* Inserting Aerial logo with code from footer.js */}
-          <br />
+          <div className="text-center">
           <img src="Images/aerial.png" width="283px" alt="aerial" />
+          </div>
         </div>
         <Footer />
         <div class="modal fade nav" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
