@@ -47,24 +47,24 @@ function Home() {
     ]
   };
   const item = [{
-    cardTitle: "10% — Apparel",
+    cardTitle: "10% minted — Charity",
+    cardDetailedText: "Create fund to support mental health organization(s) focused on depression"
+  },
+  {
+    cardTitle: "25% minted — Apparel",
     cardDetailedText: "Limited edition Creemees apparel for owners so they can show their Creemee love IRL"
   },
   {
-    cardTitle: "25% — Short",
-    cardDetailedText: "Create G-rated, animated short film with exclusive first-viewing for the Creemee community"
+    cardTitle: "50% minted — Short",
+    cardDetailedText: "Animated short film with exclusive first-viewing for the Creemee community"
   },
   {
-    cardTitle: "50% — Game",
-    cardDetailedText: "Buy Sandbox LAND to bring Creemees to the metaverse with a game reminiscent of ‘Candyland’"
+    cardTitle: "75% minted — Game",
+    cardDetailedText: "Game in The Sandbox (think ‘Candyland’ but for ice cream)"
   },
   {
-    cardTitle: "75% — Pop-up",
-    cardDetailedText: "Churn real-life, Creemees-inspired ice cream to sell in pop-up stores around the world"
-  },
-  {
-    cardTitle: "100% — Movie",
-    cardDetailedText: "Partner with movie production studio(s) to create the G-rated feature length Creemees movie"
+    cardTitle: "100% minted — Movie",
+    cardDetailedText: "Partner with movie production studio(s) to create Creemees movie"
   },
   {
     cardTitle: "Profit Sharing",
@@ -100,7 +100,7 @@ function Home() {
             <div className="row justify-content-center">
               <div className="col-lg-8 col-12">
                 <div className="px-lg-5 px-md-4 px-2 pb-4"> 
-                  <img src="Images/Hero Logo.png" width="100%" alt="cremees" />
+                  <img src="Images/hero.png" width="100%" alt="creemees" />
                 </div>
               </div>
               <div className="col-lg-4 col-12">
@@ -111,8 +111,8 @@ function Home() {
               <div className="col-11 message_box">
                 <div className="row justify-content-between align-items-center">
                   <div className="col-lg-8 col-12">
-                    <p className="message_box_heading">NFT DROP COMING SOON</p>
-                    <p className="message_box_para">All information about the Creemee NFT launch, including date and time, will be announced on our <a href="https://discord.com/invite/TRaZRxta7q" target="_blank">Discord</a>.</p>
+                    <p className="message_box_heading">JOIN THE CREEMEE CREW!</p>
+                    <p className="message_box_para"><strong>The Creemees genesis NFT drop is coming soon.</strong> All information, including drop date and time, will be announced on our <a href="https://discord.com/invite/TRaZRxta7q" target="_blank">Discord</a>.</p>
                   </div>
                   <div className="col-lg-4 col-12 nftdiscord">
                     <a href="https://discord.gg/TRaZRxta7q" target="_blank" className="btn_connect red_btn me-0">Join Discord</a>
@@ -123,22 +123,20 @@ function Home() {
           </div>
           <div className="ice_cream_section" id="unite">
             <div className="container-fluid">
-              <p className="ice_cream_heading">🍦ICE CREAM LOVERS UNITE!🍦</p>
+              <p className="ice_cream_heading">🍦MISSION: SPREAD JOY🍦</p>
               <div className="row">
                 <div className="col-lg-4 col-12">
                   <div className="px-4"> 
-                    <img src="Images/creemes.gif" className="border_radius" width="100%" alt="cremees" />
+                    <img src="Images/creemes.gif" className="border_radius" width="100%" alt="creemees" />
                   </div>
                 </div>
                 <div className="col-lg-8 col-12 py-4">
                   <p className="ice_cream_para mb-5">
-                    Creemees are 9,999 randomly-generated (and cute!) ice cream NFTs and the stars of a collaborative G-rated feature film project.
+                    Creemees are 9,999 ice cream NFTs pioneering a new model for world-building, IP ownership, and spreading joy.
                     <br /><br />
-                    Creemee NFT owners will help choose the characters (plus their names, voice actors, and backstories), settings, and themes of the future Creemees movie.
+                    As a Creemee NFT owner, you have voting power to define the "Creemee-verse" and a profit-share of the Creemees content franchise.<i> (See "What benefits do Creemee owners get?" in our <a href="https://creemees.io/#faq" target="_blank">FAQ</a> for details)</i>
                     <br /><br />
-                    50% of all movie-related profits will be shared among Creemees NFT owners.
-                    <br />
-                    (See "What benefits do Creemee owners get?" in our <a href="https://creemees.io/#faq" target="_blank">FAQ</a> for details)
+                    If you love ice cream, animation, or happiness, turn your imagination on and help us <strong>spread joy.</strong>
                   </p>
                   <a href="https://discord.gg/TRaZRxta7q" target="_blank" className="btn_connect blue_btn">Join Discord</a>
                 </div>
@@ -381,7 +379,7 @@ function Home() {
                   <div class="accordion-body">
                   Ownership of a Creemee NFT does not grant the owner any commercial use or intellectual property (IP) rights.
                     <br /><br />
-                    However, 50% of all profits from intellectual property ("I.P.") licensing (i.e. movies, T.V. shows, merchandise, etc.) will be distributed among Creemee owners based on number of Creemees owned.
+                    However, 50% of all profits from intellectual property ("I.P.") licensing (i.e. movies, T.V. shows, merchandise, etc.) will be distributed among Creemee owners based on number of Creemees owned. Financial information will be shared through private communications with verified Creemees owners to maximize transparency and collaboration throughout the project.
                     <br />
                   </div>
                 </div>
@@ -455,7 +453,7 @@ function Home() {
               <div class="accordion-item">
                 <h2 class="accordion-header" id="heading6">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                  How will a partnership with a major movie studio be formed?
+                  How will a partnership with a movie studio be formed?
                   </button>
                 </h2>
                 <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
@@ -464,7 +462,7 @@ function Home() {
                     <br /><br />
                     At this stage, Creemee owners will be able to negotiate intellectual property (IP) and commercial use rights for their Creemees.
                     <br /><br />
-                    At launch, Creemee owners do not have IP or commercial-use rights for their Creemees.
+                    Creemee owners do not own IP or commercial-use rights for their Creemees. However, they will collectively recieve a 50% share of all non-NFT profits made by the Creemees project.
                     <br />
                   </div>
                 </div>
@@ -504,12 +502,12 @@ function Home() {
               <div class="accordion-item">
                 <h2 class="accordion-header" id="heading9">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                  What is the link to the Creemees Discord?
+                  Is this project carbon-neutral?
                   </button>
                 </h2>
                 <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    The Creemees <a href="https://discord.com/invite/TRaZRxta7q" target="_blank">Discord</a> is the official hub of the Creemees community and where we announce exclusive updates and collaborate with each other.
+                    Yes! Creemees will offset all carbon emissions from the project through the purchase of carbon credits via <a href="https://aerial.is/">Aerial</a>.
                     <br />
                   </div>
                 </div>
@@ -517,12 +515,12 @@ function Home() {
               <div class="accordion-item">
                 <h2 class="accordion-header" id="heading10">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                  What is the link to the Creemees Twitter?
+                  What is the link to the Creemees Discord?
                   </button>
                 </h2>
-                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample">
+                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading910" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    We use <a href="https://twitter.com/CreemeesMovie" target="_blank">Twitter</a> to talk ice cream, share Creemee memes ("Creemes"), and announce general updates.
+                    The Creemees <a href="https://discord.com/invite/TRaZRxta7q" target="_blank">Discord</a> is the official hub of the Creemees community and where we announce exclusive updates and collaborate with each other.
                     <br />
                   </div>
                 </div>
@@ -530,12 +528,12 @@ function Home() {
               <div class="accordion-item">
                 <h2 class="accordion-header" id="heading11">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                  What is the link to the Creemees on OpenSea?
+                  What is the link to the Creemees Twitter?
                   </button>
                 </h2>
                 <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                      <a href="https://opensea.io/collection/creemees" target="_blank">https://opensea.io/collection/creemees</a>
+                    We use <a href="https://twitter.com/CreemeesMovie" target="_blank">Twitter</a> to talk ice cream, share Creemee memes ("Creemes"), and announce general updates.
                     <br />
                   </div>
                 </div>
@@ -543,10 +541,23 @@ function Home() {
               <div class="accordion-item">
                 <h2 class="accordion-header" id="heading12">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                  Can I share this with children?
+                  What is the link to the Creemees on OpenSea?
                   </button>
                 </h2>
                 <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <a href="https://opensea.io/collection/creemees" target="_blank">https://opensea.io/collection/creemees</a>
+                    <br />
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading13">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                  Can I share this with children?
+                  </button>
+                </h2>
+                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Our goal is to make Creemees and the Creemee community 100% kid-friendly and inspire conversations between adults and children about blockchain, NFTs and, most importantly, ice cream.
                     <br /><br />
@@ -556,29 +567,27 @@ function Home() {
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="heading13">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                <h2 class="accordion-header" id="heading14">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
                   Who created Creemees?
                   </button>
                 </h2>
-                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample">
+                <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    Creemees were created by a dreamer with a love of movies, NFTs, and joy.
+                    Creemees was created by a dreamer with a love of movies, NFTs, and joy.
                     <br /><br />
-                    They have a background in marketing Hollywood movies and leading NFT projects for global brands.
-                    <br /><br />
-                    Creemees' creator wishes to be anonymous to keep the focus on the true stars of this project: the Creemees and their owners.
+                    They wish to be anonymous to keep the focus on the true stars of this project: the Creemees and the Creemee Crew community.
                     <br />
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="heading14">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                <h2 class="accordion-header" id="heading15">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
                   Who is this project dedicated to?
                   </button>
                 </h2>
-                <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample">
+                <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     The creator of this project is expecting their first child in April of 2022 and this project is dedicated to them.
                     <br /><br />
@@ -595,11 +604,12 @@ function Home() {
                 <a href="https://discord.com/invite/TRaZRxta7q" target="_blank" ><img src="Images/discord.png" className="d-block discord" width="48px" alt="cremees" /></a>
                 <a href="https://opensea.io/collection/creemees" target="_blank" ><img src="Images/opensea.png" className="d-block" width="48px" alt="cremees" /></a>
               </div>
-              <p className="SM text-center">Carbon-neutrality powered by <a href="https://aerial.is/">Aerial</a></p>
-          </div>
+              <br /><br />   
           {/* Inserting Aerial logo with code from footer.js */}
           <div className="footer text-center">
           <img src="Images/aerial.png" width="283px" alt="aerial" />
+          <p className="SM text-center">Carbon-neutrality powered by <a href="https://aerial.is/">Aerial</a></p>
+          </div>          
           </div>
         </div>
         <Footer />

@@ -308,9 +308,10 @@ body {
   box-shadow: rgb(136 169 200 / 15%) 0px 4px 28px;
   border-radius: 50px;
 }
-.modal-backdrop.fade{
+/* .modal-backdrop.fade{
   /* pointer-events: none; */
-}
+/*} */
+
 ul.footer-ul{
   padding-left: 0px !important;
 }
@@ -807,9 +808,4 @@ body.modal-open {
 }
 .shadow{
   box-shadow: 0px 4px 4px 0px #00000081;
-}
-.aerial-logo {
-  padding-top: 5px;
-  padding-bottom: 20px;
-  margin: auto !important;
 }
